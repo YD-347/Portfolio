@@ -1,0 +1,123 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding: 0;
+    background-color: #161748;
+}
+header{
+    text-align: center;
+    padding: 20px;
+    color:#39a0ca;
+}
+.top-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background-color:#161748;
+      display: flex;
+      justify-content: right;
+      gap: 20px;
+      z-index: 1000;
+    }
+    .top-bar a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      background: #007bff;
+      transition: 0.3s;
+    }
+    .top-bar a:hover {
+      background: #0056b3;
+    }
+    /* space so content isn’t hidden behind fixed top bar */
+    header, section {
+      padding-top: 80px;
+    }
+nav a{
+    color: wheat;
+    margin:0 15px;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+section{
+    padding: 40px;
+    background: #00a0a0;
+    margin: 40px;
+    border-radius: 8px;
+}
+footer{
+    text-align: center;
+    color: wheat;
+    background-color: #0f2862;
+    padding: 10px;
+}
+
+nav a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+h2{
+    color: #0077b5;
+    
+}
+.fade-in{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out,transform 0.8s ease-out;
+    pointer-events: none;
+}
+.fade-in.visible{
+    opacity: 1;
+    transform: translatey(0);
+    pointer-events: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    background: #51d0de;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+form label{
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+form input,form textarea{
+    padding: 10px;
+    border: 1px solid #101357;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+form button{
+    background: #333;
+    color: wheat;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+
+}
+form button:hover{
+    background: #0f2862;
+}
+#formMessage{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+
